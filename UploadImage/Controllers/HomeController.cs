@@ -9,6 +9,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using UploadImage.Models;
 
+//CREATE TABLE[dbo].[tblFiles]
+//(
+
+//   [Id] INT             IDENTITY(1, 1) NOT NULL,
+
+//[Name]        NVARCHAR(50)   NULL,
+//    [ContentType] NVARCHAR(200)  NULL,
+//    [Data] VARBINARY(MAX) NULL,
+//    PRIMARY KEY CLUSTERED([Id] ASC)
+//);
+
+
 
 namespace UploadImage.Controllers
 {
