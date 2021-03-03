@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Upload";
+}
+
+<h1>Upload</h1>
+@using (Html.BeginForm("SaveToDB", "Home", FormMethod.Post, 
+        new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="postedFile" />
+    <input type="submit" id="btnUpload" value="Upload" />
+}
