@@ -41,11 +41,12 @@ namespace UploadImage.Controllers
         public async Task<IActionResult> SaveToDB(IFormFile postedFile)
         {
             TblFile myFile = new TblFile();
-            var basePath = Path.Combine(Directory.GetCurrentDirectory() + "\\Files\\");
-            bool basePathExists = System.IO.Directory.Exists(basePath);
-            if (!basePathExists) Directory.CreateDirectory(basePath);
+
+            //var basePath = Path.Combine(Directory.GetCurrentDirectory() + "\\Files\\");
+            //bool basePathExists = System.IO.Directory.Exists(basePath);
+            //if (!basePathExists) Directory.CreateDirectory(basePath);
             var fileName = Path.GetFileNameWithoutExtension(postedFile.FileName);
-            var filePath = Path.Combine(basePath, postedFile.FileName);
+            //var filePath = Path.Combine(basePath, postedFile.FileName);
             var extension = Path.GetExtension(postedFile.FileName);
             using (var dataStream = new MemoryStream())
             {
